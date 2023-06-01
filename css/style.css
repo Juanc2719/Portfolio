@@ -1,0 +1,55 @@
+body{
+    color: white;
+	margin: 5em 15em;
+	background-color: black;
+}
+
+
+.container {
+   
+ 
+}
+a{ 
+   color: orange;
+}
+
+
+header{
+	
+	 background-image: url(../img/gradient1.png); 
+	 background-repeat: no-repeat;
+	 background-size:cover;
+	 height: 250px;
+	 padding: 20px 50px;
+	 
+
+	
+}
+
+.marker{
+	 display:flex;
+	 gap: 30px;
+	 flex-direction; row;
+	 justify-content: center;
+}
+h1{
+	font-style: italic;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 40px;
+	color: white;
+	margin: 0px;
+}
+
+.about_me {
+	margin-top: -1.2em;
+	color: green;
+	text-align: justify;
+	background-color: #b0b0b0;
+}
+
+img.myPicture{
+	width:200px;
+	height:200px;
+	
+}
