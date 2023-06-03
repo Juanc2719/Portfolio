@@ -2,15 +2,29 @@ body{
     color: white;
 	margin: 5em 15em;
 	background-color: black;
+	
+	
 }
 
 
 .container {
-   
+	display: grid ;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto ; 
+   min-width: 1000px;
  
 }
+
 a{ 
    color: orange;
+}
+
+a:hover{
+	color: rgb(236, 229, 129);
+}
+
+a:visited{
+	color:rgb(228, 116, 97)
 }
 
 
@@ -21,7 +35,7 @@ header{
 	 background-size:cover;
 	 height: 250px;
 	 padding: 20px 50px;
-	 
+	
 
 	
 }
@@ -29,7 +43,7 @@ header{
 .marker{
 	 display:flex;
 	 gap: 30px;
-	 flex-direction; row;
+	 flex-direction: row;
 	 justify-content: center;
 }
 h1{
@@ -42,14 +56,90 @@ h1{
 }
 
 .about_me {
-	margin-top: -1.2em;
-	color: green;
-	text-align: justify;
-	background-color: #b0b0b0;
+	display:grid;
+	grid-template-columns: 1fr 2fr ;
+	padding: 20px;
+	background-color: #383434;
+	
 }
 
-img.myPicture{
-	width:200px;
-	height:200px;
+ #about{
+	grid-column-start: 2; 
+	height: fit-content;
+} 
+
+.myinfo {
+	text-align: justify;
+	padding: 0px 15px;
+	width: 550px;
 	
+}
+
+
+
+img.myPicture{
+	
+	width:400px;
+	
+}
+
+#mypicture{
+	grid-column: 1/1;
+	grid-row: 1/6;
+}
+
+  #contact_info{
+	grid-column-start: 2;
+	padding: 0px 15px;
+  }
+ 
+  #professional{
+	grid-column-start: 2;
+	padding: 0px 15px;
+ }
+ #professional ul{
+	display: flex;
+	gap:  30px;
+
+ }
+
+ #skills{
+    grid-column-start: 2;
+	padding: 0px 15px;
+ }
+
+ .myskills{
+	display: flex;
+ }
+ .myskills > div{
+	display: flex;
+	flex-direction: column;
+	background-color: #535353;
+	margin: 10px;
+	padding: 20px;
+	font-size: 20px;
+	  
+ }
+
+ .myskills > div > img{
+	align-self: center;
+	width: 30px;
+ }
+
+ #projects{
+	grid-column-start: 2;
+	padding: 0px 15px;
+ }
+
+ 
+
+ .project_style > img{
+ height: 400px;
+
+ }
+
+footer {
+	display: flex;
+	flex-direction: row-reverse;
+	font-size: 30px;
 }

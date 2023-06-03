@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Portfolio</title>
 
-    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,8 +14,12 @@
 			<div>
 				<nav>
 					<ul class="marker">
+						<li><a href="#mypicture">My picture</a></li>
 						<li><a href="#about">About Me</a></li>
-						<li><a href="#">Projects</a></li>
+						<li><a href="#contact_info">Contact Information</a></li>
+						<li><a href="#professional">Professional Information</a></li>
+						<li><a href="#skills">My skills</a></li>
+						<li><a href="#projects">My Projects</a></li>
 					</ul>
 				</nav>
 				
@@ -26,28 +29,80 @@
 				</div>
 		    </div>
         </header>
-	    
-		
-        
-            
 		<div class="about_me">
-			<section id="about" >
+			<section id="mypicture">
 				<div>
-					<h2>About Me</h2>
+					<img src="img/me.jpg" class="myPicture" >
+				</div>
+			</section>
+			<section id="about" >
+				<div class="myinfo">
+					<div>
+						<h2>About Me</h2>
 						<p>
 							I currently work for Amazon as a Controls System Lead.
 							I was born and raised in Puerto Rico and decided to move to the United States in 2013.
 							I enjoy hiking, Kayaking and playing pool on my free time. I hope to be proficient at coding to pursue a career in the Programming field.
 						</p>
-					<div>
-						<img src="img/me.jpg" class="myPicture" >
 					</div>
-					<p></p>
-					<button class="btn">Learn More</button>
 				</div>
 			</section>
+			<section id="contact_info">
+				<div>
+					<p>
+						<h2>Contact Information</h2>
+						Name: Juan C Alvarado <br>
+						Address:123 coconut dr hilton, OH 40234 <br>
+						Phone: (774)568-4749
+					</p>
+			</section>
+			<section id="professional">
+				<div>
+						<h2>Professional Networking Sites</h2>
+						<ul>
+							<li><a href="https://www.linkedin.com/in/juan-c-alvarado-015a6a158/">LinkedIn</a></li>
+							<li><a href="https://github.com/Juanc2719">Github Projects</a></li>
+						</ul>
+			</section>
+			<section id="skills">
+				
+					<h2>What i can do</h2>
+					<div class="myskills">
+					<div>
+						<img src="img/teamwork.jpg">
+						Teamwork</div>
+					<div>
+						<img src="img/pool.jpg">
+						Playing Pool</div>
+					<div>
+						<img src="img/plc.png">
+						PLC Programming</div> 
+					<div>
+						<img src="img/solving.jpg">
+						Problem Solving</div>
+					</div>   
+			</section>
+			<section  id="projects">
+				<article class="myprojects">
+					<h2>Projects</h2>
+					<article class="project_style">
+						<a href="https://github.com/Juanc2719/GridProject"><h3>Grid Box</h3></a>
+						<img src="img/gridwork.JPG">
+					</article>
+					<article class="project_style">
+						<a href="https://github.com/Juanc2719/Flexbox-project"><h3>Flex Box</h3></a>
+						<img src="img/flexwork.JPG">
+					</article>
+					<article class="project_style">
+						<a href="https://github.com/Juanc2719/Form-Style"><h3>Flex Styling</h3></a>
+						<img src="img/formstyle.JPG">
+					</article>
+				</article>
+			</section>
 		</div>
-		
+		<footer>
+            <p> Juan Alvarado Portfolio &copy 2023</p>
+        </footer>
 	</div>
 </body>
 </html>
